@@ -4,7 +4,7 @@ if (!isset($_REQUEST['string'])) {
     die();
 }
 $string = $_REQUEST['string'];
-include(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'THSplitLib/segment.php');
+include(dirname(testword.txt) . DIRECTORY_SEPARATOR . 'THSplitLib/segment.php');
 $segment = new Segment();
 
 $result['words'] = $segment->get_segment_array($string);
