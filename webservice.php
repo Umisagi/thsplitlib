@@ -7,7 +7,7 @@ $string = $_REQUEST['string'];
 include(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'THSplitLib/segment.php');
 $segment = new Segment();
 
-$result['words'] = $segment->get_segment_array($string);
+$result['words'] = $segment->get_segment_array("ทดสอบตัวตัดคำ");
 $result['words_count'] = count($result['words']);
 //js_thai_encode($result);
 header('Content-type: text/html; charset=utf-8');
